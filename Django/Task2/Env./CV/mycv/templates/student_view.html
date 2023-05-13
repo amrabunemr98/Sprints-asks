@@ -1,0 +1,11 @@
+<div class="Table of Students">
+    <h2>Table of Students</h2>
+<hr>
+<hr>
+</div>
+<div class="main">
+    {% for data in dataset %}
+    <b>{{ data.first_name }} {{ data.last_name }}</b>
+    <hr/>
+    {% endfor %}
+</div>
