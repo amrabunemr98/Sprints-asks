@@ -1,5 +1,7 @@
-FROM python:3.8
+FROM node:16-alpine
 WORKDIR /app
-COPY . .
-RUN pip install Flask==0.10.1
-CMD ["python3", "app.py"]
+COPY package.json .
+RUN npm install
+COPY . . 
+EXPOSE 8080
+CMD ["node", "server.js"]
