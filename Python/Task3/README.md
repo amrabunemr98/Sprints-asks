@@ -1,2 +1,3 @@
 Balanced Brackets Task
-![Screenshot from 2023-05-18 13-38-52](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/f6ad4a81-e57f-4be0-b8fb-195fb8b0c2b3)
+![Screenshot from 2023-05-19 16-54-04](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/1485d054-70cf-4d6f-b848-d939de94167c)
+
