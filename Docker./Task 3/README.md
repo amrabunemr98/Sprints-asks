@@ -24,7 +24,7 @@
 ### Create a docker compose to up mysql container,  https://github.com/sabreensalama/dockerize-node-app-task which depend on mysqldb. Add volume for mysqldb:
 ![Screenshot from 2023-05-31 03-16-37](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/f5ef848c-e466-41f9-bbf5-5c760016ea77)
 ![Screenshot from 2023-05-31 03-16-52](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/feef5c89-850e-4fa7-b783-3038cd284f25)
-## Problem5:
+## Problem 4:
 ### Use docker compose to deploy ghost platform (image: ghost:1-alpine)(Ghost is a free and open source blogging platform written in JavaScript) Use mysql database instead of sqlite:
 ![Screenshot from 2023-05-31 03-56-23](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/b6304615-3170-4e8e-8e38-1b0cff86b314)
 ![Screenshot from 2023-05-31 03-42-38](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/f2fdb348-2049-4a38-8e26-18feccc217ea)
