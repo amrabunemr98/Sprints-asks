@@ -11,7 +11,7 @@
 -----------------------------------------------------
 ## 3- Create Instances:
 - Installing Apache on The Public and Private Machine:
-![Screenshot from 2023-06-05 01-01-03](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/258394eb-d418-4915-b0e9-939ea720aab1)
+![Screenshot from 2023-06-05 01-25-26](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/9c7387be-a6b7-4f95-9abc-de871293afc5)
 ------------------------------------
 - Public and Private Instance:
 ![Screenshot from 2023-06-05 01-01-03](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/8306efda-32be-4dfd-809f-f85c2b7cb657)
