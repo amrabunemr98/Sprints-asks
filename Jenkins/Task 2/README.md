@@ -1,6 +1,6 @@
 # Jenkins Task 2
 ## 1- What is Jenkins pipeline ?
-### Jenkins Pipeline is a powerful tool that can help you automate your software delivery process continuous integrating/delivery pipelines into Jenkins. It can be used to automate a wide range of tasks, including:
+### Jenkins Pipeline is a powerful tool that can help you automate your software delivery process continuous integrating pipelines into Jenkins. It can be used to automate a wide range of tasks, including:
 - Building your code
 - Running unit tests
 - Deploying your code to a staging environment
