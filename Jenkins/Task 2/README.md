@@ -30,6 +30,10 @@
 ![Screenshot from 2023-06-21 22-00-33](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/bb5efead-ebe3-4fec-a83b-bbeb297b6c99)
 ------------------------------------------------
 ## 7- Create another multibranch pipeline and filter branches to contain only (main , dev , test )
+![Screenshot from 2023-06-21 23-03-35](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/5c747a3d-7e74-45ce-8925-76732316fdaa)
+![Screenshot from 2023-06-21 23-04-08](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/4adad2be-3f69-4fd3-adf4-f0ea584d2bd0)
+
+
 
 
 
