@@ -1,4 +1,4 @@
-@library('pipejenkins-shared') _
+@Library('pipejenkins-shared') _
 pipeline {
      agent any
     parameters {
@@ -14,7 +14,7 @@ pipeline {
 
             stage('build') {
                 steps {
-                    building()
+                    Building()
                 }
             }
 
