@@ -6,32 +6,32 @@ pipeline {
         choice(name: 'namespace', choices:['Development','Testing','Production'], description: '' ) 
     }
     stages {
-            stage('Check') {
+            stage('check') {
                 steps {
-                    check()
+                    Checks()
                 }
             }
 
-            stage('Build') {
+            stage('build') {
                 steps {
-                    build()
+                    building()
                 }
             }
 
-            stage('Test') {
+            stage('test') {
                 when {
                     expression{
                         params.Test == true 
                     }
                 }
                 steps {
-                    test()
+                    Tests()
                 }
             }
             
-            stage('Deployment') {  
+            stage('deployment') {  
                 steps {
-                    dep()
+                    Depo()
                 }
             }    
     }
