@@ -1,3 +1,4 @@
+@library('pipejenkins-shared') _
 def gv
 pipeline {
      agent any
@@ -44,4 +45,3 @@ pipeline {
             }    
     }
 }
-/*appframeworkAPIsPipline()  @library('pipejenkins-shared')
