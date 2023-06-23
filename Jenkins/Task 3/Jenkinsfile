@@ -10,13 +10,17 @@ pipeline {
     stages {
             stage('check') {
                 steps {
-                    gv.checkapp
+                    script {
+                        gv.checkapp
+                    }
                 }
             }
 
             stage('build') {
                 steps {
-                    gv.buildapp
+                    script {
+                        gv.buildapp
+                    }
                 }
             }
 
@@ -27,13 +31,17 @@ pipeline {
                     }
                 }
                 steps {
-                    gv.testapp 
+                    script {
+                        gv.testapp 
+                    }
                 }
             }
             
             stage('deployment') {  
                 steps {
-                    gv.deploymentapp
+                    script {
+                      gv.deploymentapp  
+                    }
                 }
             }    
     }
