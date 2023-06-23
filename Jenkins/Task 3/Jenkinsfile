@@ -6,19 +6,19 @@ pipeline {
         choice(name: 'namespace', choices:['Development','Testing','Production'], description: '' ) 
     }
     stages {
-            stage('check') {
+            stage('Check') {
                 steps {
                     check()
                 }
             }
 
-            stage('build') {
+            stage('Build') {
                 steps {
                     build()
                 }
             }
 
-            stage('test') {
+            stage('Test') {
                 when {
                     expression{
                         params.Test == true 
@@ -29,7 +29,7 @@ pipeline {
                 }
             }
             
-            stage('deployment') {  
+            stage('Deployment') {  
                 steps {
                     dep()
                 }
