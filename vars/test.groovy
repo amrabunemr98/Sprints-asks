@@ -1,5 +1,3 @@
-def testapp() {
+def call() {
     echo "testing your app" 
 }
-
-return this

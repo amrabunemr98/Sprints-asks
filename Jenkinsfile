@@ -1,5 +1,4 @@
 @library('pipejenkins-shared') _
-def gv
 pipeline {
      agent any
     parameters {
@@ -9,17 +8,13 @@ pipeline {
     stages {
             stage('check') {
                 steps {
-                    script {
-                        gv.checkapp
-                    }
+                    check()
                 }
             }
 
             stage('build') {
                 steps {
-                    script {
-                        gv.buildapp
-                    }
+                    build()
                 }
             }
 
@@ -30,17 +25,13 @@ pipeline {
                     }
                 }
                 steps {
-                    script {
-                        gv.testapp 
-                    }
+                    test()
                 }
             }
             
             stage('deployment') {  
                 steps {
-                    script {
-                      gv.deploymentapp  
-                    }
+                    dep()
                 }
             }    
     }
