@@ -1,6 +1,6 @@
 # Jenkins Task 3
 ## 1- What is the benefit of using master-slave architecture rather than building on master only ?
-### - It allows you to scale out your build infrastructure as needed. By distributing the build load across multiple machines, you can ensure that your builds complete quickly and don't overwhelm the resources of the master machine. This also increases the reliability of your build system, as if the master machine fails, the build can continue on one of the slave machines without interruption.
+- It allows you to scale out your build infrastructure as needed. By distributing the build load across multiple machines, you can ensure that your builds complete quickly and don't overwhelm the resources of the master machine. This also increases the reliability of your build system, as if the master machine fails, the build can continue on one of the slave machines without interruption.
 ----------------------------------------------
 ## 2- What is different between authorization and authentication ?
 - Authentication: refers to the process of verifying the identity of a user or system. This typically involves the user or system providing some form of credentials, such as a username and password, which are then compared against a list of authorized users or stored in a secure database.
