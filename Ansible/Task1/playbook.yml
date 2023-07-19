@@ -1,0 +1,47 @@
+- name: install and configure nginx
+  hosts: nginx
+  become: true
+  tasks:
+  - name: install nginx
+    become: true
+    apt: 
+      name: nginx
+      state: present
+      update_cache: true
+  - name: Create custom index.html file
+    become: true
+    copy:
+      content: "Hello from my nginx that installed by ansible"
+      dest: /var/www/html/index.html
+  - name: Configure NGINX to listen on port 8090
+    become: true
+    blockinfile:
+      path: /etc/nginx/sites-available/default
+      block: |
+        server {
+          listen 8090 default_server;
+          listen [::]:8090 default_server;
+          server_name _;
+          root /var/www/html;
+        }
+  handlers:
+  - name: Restart NGINX service
+    become: true
+    service:
+      name: nginx
+      state: restarted
+  - name: Git clone repository
+    git:
+      repo: https://github.com/sabreensalama/dockerize-node-app-task.git
+      dest: /home/ubuntu/abunemr/dockerize-node-app-task
+  - name: Install Node.js and npm
+    apt:
+      name: [nodejs, npm]
+      state: present
+      update_cache: true
+  - name: Install app dependencies (version for npm)
+    npm:
+      path: /home/ubuntu/abunemr/dockerize-node-app-task
+      state: latest
+  - name: Run app
+    shell: node /home/ubuntu/abunemr/dockerize-node-app-task/server.js &
