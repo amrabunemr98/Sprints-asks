@@ -1,7 +1,33 @@
 # Terraform Project
-## This project involves creating a highly scalable and efficient architecture for routing traffic to private servers using a load balancer. To achieve this, I use Terraform modules and a remote state file stored in an S3 bucket.
+## Overview:
+### This Terraform configuration creates a simple web application with a load balancer and a proxy server. The web application is hosted on two EC2 instances in a public subnet. The load balancer distributes traffic to the two EC2 instances. The proxy server is hosted on a single EC2 instance in a private subnet. The proxy server forwards traffic from the public internet to the web application on the private EC2 instances.
 ![Screenshot from 2023-07-17 19-33-38](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/8ccea6cb-35b0-45df-8f74-44534c48273a)
 ------------------------------------------------------
+## Requirements:
+### To use this Terraform configuration, you will need the following:
+- A Terraform installation
+- An AWS account
+- An SSH key pair
+
+## Setup
+### To set up this Terraform configuration, you will need to do the following:
+1. Create a new Terraform workspace.
+1. Initialize the Terraform configuration.
+1. Create a remote state file in an S3 bucket.
+1. Apply the Terraform configuration.
+
+## Usage
+## To use this Terraform configuration, you will need to do the following:
+1. Run the following command to create the state file in an S3 bucket:
+```
+terraform init
+```
+1. Run the following command to apply the Terraform configuration:
+```
+terraform apply
+```
+
+
 ## Creating and Working on workspace dev :
 ![Screenshot from 2023-07-17 18-22-47](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/6ff602a9-8db4-4241-81e3-16e855c3681a)
 ---------------------------------------------
