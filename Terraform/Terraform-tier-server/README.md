@@ -1,6 +1,6 @@
-# Terraform to Deploy a Simple Web Application with Load Balancer and Reverse Proxy
+# Terraform to Deploy Web Application with Load Balancer and Reverse Proxy
 ## Overview:
-### This Terraform configuration creates a simple web application with a load balancer and a proxy server. The web application is hosted on two EC2 instances in a public subnet. The load balancer distributes traffic to the two EC2 instances. The proxy server is hosted on a single EC2 instance in a private subnet. The proxy server forwards traffic from the public internet to the web application on the private EC2 instances.
+### This Terraform configuration creates web application with a load balancer and a proxy server. Nginx application is hosted on two EC2 instances in a public subnet. The load balancer distributes traffic to EC2 instances. Appache application is hosted on a single EC2 instance in a private subnet. I configure the public load balancer to forward traffic to the IP address of the reverse proxy.Once i have configured public the load balancer, i can test it by visiting the public load balancer DNS in my browser.
 ![Screenshot from 2023-07-17 19-33-38](https://github.com/amrabunemr98/Sprints-tasks/assets/128842547/8ccea6cb-35b0-45df-8f74-44534c48273a)
 ------------------------------------------------------
 ## Requirements:
