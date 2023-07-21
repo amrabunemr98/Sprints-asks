@@ -1,9 +1,9 @@
 # Prometheus Task 1
 ## 1- What are the different HTTP status code and explain meaning of each of them?
-- Informational: These status codes indicate that the server has received the request and is continuing to process it
-- Successful: These status codes indicate that the request was successfully received, understood and accepted
-- Redirection: These status codes indicate that the client must take additional action to complete the request
-- Client Error: These status codes indicate that the request contains bad syntax or cannot be fulfilled
+- Informational: Server has received the request and is continuing to process it
+- Successful: Request was successfully received, understood and accepted
+- Redirection: Client must take additional action to complete the request
+- Client Error: Request contains bad syntax or cannot be fulfilled
 -----------------------------------------------
 ## 2- What database is used by Prometheus?
 - TSDB (Time Series DataBase): Custom-built database that is optimized for storing and querying time-series data. It is designed to be highly scalable and performant, and it uses a compressed, in-memory format to store the time-series data
